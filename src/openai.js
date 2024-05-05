@@ -1,8 +1,8 @@
 
 
 const { Configuration, OpenAIApi } = require('openai');
-//have to comment out apiKey to upload to the github
-//const configuration = new Configuration({ apiKey: "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" });
+//have to remove apiKey to upload to the github
+const configuration = new Configuration({ apiKey: "" });
 const openai = new OpenAIApi(configuration);
 
 export async function sendMsgToOpenAI(message) {
